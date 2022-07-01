@@ -21,10 +21,8 @@ block content
     div.form-group
       label(for='status') Status:
       select#status.form-control(type='select' placeholder='Select status' name='status' required='true')
-        option(value='Maintenance') Maintenance
-        option(value='Available') Available
-        option(value='Loaned') Loaned
-        option(value='Reserved') Reserved
+        for optionValue in ['Maintenance', 'Available', 'Loaned', 'Reserved']
+          option(value=optionValue selected=(bookinstance !== undefined && bookinstance.status === optionValue ? 'selected': false)) #{optionValue}
 
     button.btn.btn-primary(type='submit') Submit
 

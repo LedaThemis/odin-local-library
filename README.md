@@ -1,4 +1,4 @@
-# [Odin | Mini Message Board](https://salty-coast-97855.herokuapp.com/)
+# [Odin | MDN Local Library](https://bagged-mountie-02216.herokuapp.com/)
 
 Technologies used:
 
